@@ -4,6 +4,8 @@ import cookieParser from "cookie-parser";
 import db from "./utils/db.js";
 // import user routes
 import userRoutes from "./routes/auth.routes.js";
+// import task routes
+import taskRoutes from "./routes/task.routes.js";
 
 dotenv.config();
 
@@ -20,6 +22,7 @@ db();
 
 // User Routes
 app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/tasks", taskRoutes);
 
 app.listen(port, () => {
     console.log(`Backend started running on port ${port}`);

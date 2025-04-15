@@ -1,5 +1,5 @@
 import z from "zod";
-import { User } from "../model/User.model.js";
+import User from "../model/User.model.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import bcrypt from "bcryptjs";
